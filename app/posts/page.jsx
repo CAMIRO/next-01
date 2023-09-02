@@ -1,10 +1,11 @@
 import PostCard from '../../components/PostCard'
 
+
 async function loadPosts() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data = await res.json()
 
-    // await new Promise(res => setTimeout( res, 3000)) 
+    await new Promise(res => setTimeout( res, 5000)) 
     return data
 }
 
